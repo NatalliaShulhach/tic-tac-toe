@@ -15,7 +15,7 @@ class TicTacToe {
       nextTurn(row, col) {
         if (this.matrix[row][col] === null) {
           this.matrix[row][col] = this.getCurrentPlayerSymbol();
-          this.PlayerSymbol = !this.layerSymbol;
+          this.PlayerSymbol = !this.PlayerSymbol;
           this.counterTurn++;
         }
       }
